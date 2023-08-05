@@ -92,7 +92,7 @@ app.post('/update_book/:edit_id', async (req, res) => {
     let edit_id = req.params.edit_id;
 
     await collection.updateOne({
-        _id: ObjectId(edit_id)
+        _id: new ObjectId(edit_id)
     }, {
         $set: book
     });
