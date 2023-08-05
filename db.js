@@ -5,7 +5,7 @@ const ObjectID = mongodb.ObjectId;
 let database;
 
 async function getDatabase() {
-    const client = await MongoClient.connect('mongodb+srv://codesantaisai:ZI2hnTwOdGn4DA2o@cluster0.0zp32a0.mongodb.net/?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('');
     database = client.db('library');
 
     if (!database) {
